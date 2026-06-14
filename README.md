@@ -1,52 +1,40 @@
 # 👋 Hi, I'm Muhammad Irfan
 
 ### 🎯 Junior Penetration Tester
-Hands-on offensive practitioner focused on executing penetration tests, exploiting vulnerabilities, and writing clear assessment reports for corporate environments. 
+Offensive security practitioner focused on the most critical part of the job: **actionable vulnerability reporting**. I specialize in breaking down complex exploitation paths, analyzing security flaws, and writing clear, consultant-grade penetration testing reports for both technical teams and corporate leadership.
 
 ---
 
-## 🛠️ Tools & Tech Stack
-* **Tools:** Burp Suite Community, Impacket, Responder, BloodHound, GoPhish, Docker, Nmap, Metasploit.
-* **Environments:** Active Directory Ranges, Web Applications, REST APIs, Linux/Windows target machines.
-* **Automation:** Python & Bash (for adjusting public exploits and custom fuzzing/enumeration scripts).
+## 🛠️ Tools & Core Skills
+* **Core Focus:** Penetration Test Reporting, Technical Writing, Threat Translation (Technical to Executive Risk).
+* **Vulnerability Frameworks:** OWASP Top 10, MITRE ATT&CK Mapping.
+* **Familiar Tools:** Burp Suite Community, Nmap, Metasploit, Linux/Windows environments.
 
 ---
 
-## 🚀 Custom Lab Builds (No Pre-Made Boxes Available)
-For vulnerabilities that do not have existing machines on Hack The Box or TryHackMe, I built, dockerized, and configured the target environments locally from scratch to test the exploits.
+## 📄 Penetration Testing Reports Portfolio
+The real value of a penetration tester is the report they deliver to the client. Below is a repository of formal, corporate-style security assessment reports. These reports are structured from intensive case studies of complex machines, detailing the step-by-step Proof of Concept (PoC) and clear remediation steps.
 
-### 🌐 1. REST API & Web Custom Builds
-* **CVE-2020-6950 (Eclipse Mojarra):** Built a local JavaServer Faces (JSF) environment using Tomcat to exploit local file read via path traversal.
-* **CVE-2022-21703 (Grafana):** Deployed unpatched Grafana multi-tenant setups via Docker to execute API profile contamination and account takeover.
-* **CVE-2023-40028 (Ghost CMS):** Ran an unpatched Node.js Ghost instance locally to exploit arbitrary file read via backend image upload endpoints.
-* **CVE-2024-27130 (QNAP QTS) & CVE-2025-10611:** Set up local custom mock instances to trace parameter logic validation flaws and input sanitization issues.
-* **What's inside:** My `docker-compose.yml` files, custom Python fuzzing/exploit scripts, and local environment setup notes.
-* **🔗 [Go to Custom API Lab Builds](./Rest-Api/)**
+I maintain individual, deep-dive report files directly inside these directories:
 
-### 🏢 2. Active Directory Custom Builds
-* **CVE-2022-30216 (Windows Server Service):** Deployed an unpatched Windows Server evaluation ISO inside an isolated VirtualBox host-only range to trace remote execution vectors via RPC components.
-* **CVE-2026-25177 & CVE-2026-41089 (Netlogon RCE):** Manually configured active domains with overly permissive Access Control Entries (ACEs) and tracking mechanics to verify modern privilege escalation logic.
-* **What's inside:** Local network topology diagrams, PowerShell scripts used to spin up test domain users, and attack path captures.
-* **🔗 [Go to Custom AD Lab Builds](./Active-Directory/)**
-
-### 🎣 3. Simulated Phishing Client-Side Custom Builds
-* **CVE-2023-3079 & CVE-2023-4863 (WebP Image Flaws):** Built local HTML landing pages hosting weaponized `.webp` files to trigger memory execution flaws on older, portable browser test versions.
-* **CVE-2026-11645 (Chrome V8 Engine):** Researched and documented technical defense papers tracking modern browser security boundaries and JavaScript engine bypass methods.
-* **What's inside:** GoPhish framework campaign scripts, raw email headers, and custom targeted spear-phishing HTML templates.
-* **🔗 [Go to Custom Phishing Builds](./Phishing-simulations/)**
+* **📂 [Active Directory Network Assessment Reports](./Active-Directory/)**
+  * Case-study reports covering enterprise network flaws, domain privilege escalation, and domain takeovers (including ZeroLogon, PetitPotam, and Certifried AD CS abuse).
+* **📂 [REST API & Web Application Security Reports](./Rest-Api/)**
+  * Reports focused on web-facing vulnerabilities, including XML/Java deserialization, Apache SSRF, and endpoint access bypasses.
+* **📂 [Phishing & Client-Side Security Reports](./Phishing-simulations/)**
+  * Assessment write-ups detailing initial access vectors, such as the Outlook Moniker Link hash leak and weaponized office attachments.
 
 ---
 
-## 📄 Penetration Testing Reports Repository
-Every single machine or box I hack—whether it's on Hack The Box, TryHackMe, or my own local range—gets a dedicated, professional assessment report. These reports detail the executive risk, the technical step-by-step Proof of Concept (PoC), and the exact remediation steps needed to fix the flaws.
+## 🚩 CTF Walkthroughs & Core Fundamentals
+When I am not practicing reporting, I use Capture The Flag platforms to sharpen my hands-on exploitation and problem-solving skills.
 
-I organize all my reports straight into the main assessment directories. You can browse through the full collection of individual machine reports here:
-
-* **📂 [Active Directory Network Assessment Reports](./Active-Directory/)** — *Includes full walkthrough reports for TryHackMe/HTB boxes (ZeroLogon, PetitPotam, Certifried, sAMAccountName Spoofing) and my custom local ranges.*
-* **📂 [REST API & Web Application Security Reports](./Rest-Api/)** — *Includes individual vulnerability assessment reports for machines targeting XStream deserialization, Apache SSRF, Joomla endpoint exposures, and custom Docker apps.*
-* **📂 [Phishing & Initial Access Assessment Reports](./Phishing-simulations/)** — *Includes reports detailing credential harvesting metrics, Outlook Moniker Link hash leaks, and Microsoft Office weaponization cases.*
+### 🎯 picoCTF (Offensive Track)
+* **Focus:** Binary Exploitation, Web Exploitation, and Cryptography fundamentals.
+* **What's inside:** Clean, straightforward write-ups of the challenges I've solved. Instead of just giving the flag, I explain *why* the vulnerability existed and the logic behind the solution.
+* **🔗 [Go to picoCTF Write-ups Repository](./picoCTF/)**
 
 ---
 
 ## 🤝 Connect with Me
-* **LinkedIn:** [linkedin.com/in/muhammad-irfan](https://linkedin.com/in/muhammad-irfan-8368352b4) *(I post updates here whenever I finish a new box or drop a report into this repo)*
+* **LinkedIn:** [linkedin.com/in/muhammad-irfan](https://linkedin.com/in/muhammad-irfan-8368352b4) *(I post updates here whenever I finish a new CTF or drop a report into this repo)*
